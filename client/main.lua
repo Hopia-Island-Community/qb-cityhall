@@ -264,7 +264,7 @@ RegisterNUICallback('requestLicenses', function(_, cb)
     local licensesMeta = PlayerData.metadata["licences"]
     local availableLicenses = table_clone(Config.Cityhalls[closestCityhall].licenses)
     for license, data in pairs(availableLicenses) do
-        if data.metadata and not licensesMeta[data.metadata] then
+        if (data.metadata and not licensesMeta[data.metadata]) or (data.nolicence and licensesMeta[data.nolicence]) then
             availableLicenses[license] = nil
         end
     end
