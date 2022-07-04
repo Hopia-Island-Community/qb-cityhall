@@ -45,7 +45,7 @@ RegisterNetEvent('qb-cityhall:server:requestId', function(item, hall)
     local Player = QBCore.Functions.GetPlayer(src)
     if not Player then return end
     local itemInfo = Config.Cityhalls[hall].licenses[item]
-    if not Player.Functions.RemoveMoney("cash", itemInfo.cost) then return TriggerClientEvent('QBCore:Notify', src, ('You don\'t have enough money on you, you need %s cash'):format(itemInfo.cost), 'error') end
+    if not Player.Functions.RemoveMoney("cash", itemInfo.cost) then return TriggerClientEvent('QBCore:Notify', src, ('Vous n\'avez pas assez d\'argent sur vous, il vous faut %s d\'argent liquide.'):format(itemInfo.cost), 'error') end
     local info = {}
     if item == "id_card" or item == "tourist_visa" then
         info.citizenid = Player.PlayerData.citizenid

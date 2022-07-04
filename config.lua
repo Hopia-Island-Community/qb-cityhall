@@ -7,10 +7,10 @@ Config.Cityhalls = {
         coords = vec3(-555.65, -185.66, 38.22),
         showBlip = true,
         blipData = {
-            sprite = 487,
+            sprite = 590,
             display = 4,
             scale = 0.65,
-            colour = 0,
+            colour = 64,
             title = "Gouvernement Hopia Island"
         },
         licenses = {
