@@ -25,7 +25,7 @@ Config.Cityhalls = {
                 metadata = "citizen"
             },
             ["driver_license"] = {
-                label = "Driver License",
+                label = "Permis de conduire",
                 cost = 50,
                 metadata = "driver"
             },
