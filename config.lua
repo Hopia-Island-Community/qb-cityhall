@@ -29,11 +29,11 @@ Config.Cityhalls = {
                 cost = 50,
                 metadata = "N"
             },
-            -- ["weaponlicense"] = {
-            --     label = "Weapon License",
-            --     cost = 50,
-            --     metadata = "weapon"
-            -- },
+            ["weapon_license"] = {
+                label = "Licence d'arme",
+                cost = 50,
+                metadata = "weapon"
+            },
         }
     },
 }

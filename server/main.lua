@@ -17,11 +17,6 @@ local function giveStarterItems()
             info.birthdate = Player.PlayerData.charinfo.birthdate
             info.gender = Player.PlayerData.charinfo.gender
             info.nationality = Player.PlayerData.charinfo.nationality
-        elseif v.item == "driver_license" then
-            info.firstname = Player.PlayerData.charinfo.firstname
-            info.lastname = Player.PlayerData.charinfo.lastname
-            info.birthdate = Player.PlayerData.charinfo.birthdate
-            info.type = "Class C Driver License"
         end
         Player.Functions.AddItem(v.item, 1, nil, info)
     end
@@ -54,7 +49,7 @@ RegisterNetEvent('qb-cityhall:server:requestId', function(item, hall)
         info.lastname = Player.PlayerData.charinfo.lastname
         info.birthdate = Player.PlayerData.charinfo.birthdate
         info.type = "Class C Driver License"
-    elseif item == "weaponlicense" then
+    elseif item == "weapon_license" then
         info.firstname = Player.PlayerData.charinfo.firstname
         info.lastname = Player.PlayerData.charinfo.lastname
         info.birthdate = Player.PlayerData.charinfo.birthdate
