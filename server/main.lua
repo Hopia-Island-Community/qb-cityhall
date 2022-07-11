@@ -1,5 +1,6 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 local availableJobs = {
+    ["chomage"] = "Chômage",
     ["bus"] = "Chauffeur de bus",
 }
 
