@@ -28,19 +28,19 @@ local function getClosestHall()
     return closest
 end
 
-local function getClosestSchool()
-    local distance = #(playerCoords - Config.DrivingSchools[1].coords)
-    local closest = 1
-    for i = 1, #Config.DrivingSchools do
-        local school = Config.DrivingSchools[i]
-        local dist = #(playerCoords - school.coords)
-        if dist < distance then
-            distance = dist
-            closest = i
-        end
-    end
-    return closest
-end
+--local function getClosestSchool()
+--    local distance = #(playerCoords - Config.DrivingSchools[1].coords)
+--    local closest = 1
+--    for i = 1, #Config.DrivingSchools do
+--        local school = Config.DrivingSchools[i]
+--        local dist = #(playerCoords - school.coords)
+--        if dist < distance then
+--            distance = dist
+--            closest = i
+--        end
+--    end
+--    return closest
+--end
 
 local function setCityhallPageState(bool, message)
     if message then
@@ -138,7 +138,7 @@ local function spawnPeds()
                 }
             elseif current.cityhall then
                 opts = {
-                    label = 'Open Cityhall',
+                    label = 'Parler à Brigitte',
                     icon = 'fa-solid fa-city',
                     action = function()
                         inRangeCityhall = true
@@ -282,17 +282,17 @@ end)
 
 -- Threads
 
-CreateThread(function()
-    while true do
-        if isLoggedIn then
-            playerPed = PlayerPedId()
-            playerCoords = GetEntityCoords(playerPed)
-            closestCityhall = getClosestHall()
-            closestDrivingSchool = getClosestSchool()
-        end
-        Wait(1000)
-    end
-end)
+--CreateThread(function()
+--    while true do
+--        if isLoggedIn then
+--            playerPed = PlayerPedId()
+--            playerCoords = GetEntityCoords(playerPed)
+--            closestCityhall = getClosestHall()
+--            closestDrivingSchool = getClosestSchool()
+--        end
+--        Wait(1000)
+--    end
+--end)
 
 CreateThread(function()
     initBlips()
