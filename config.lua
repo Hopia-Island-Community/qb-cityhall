@@ -22,17 +22,17 @@ Config.Cityhalls = {
             ["id_card"] = {
                 label = "Carte d'identité",
                 cost = 50,
-                metadata = "citizen"
+                metadata = { "citizen" }
             },
             ["driver_license"] = {
                 label = "Permis de conduire",
                 cost = 50,
-                metadata = "N"
+                metadata = { "N", "A", "B", "C", "D" }
             },
             ["weapon_license"] = {
                 label = "Licence d'arme",
                 cost = 50,
-                metadata = "weapon"
+                metadata = { "weapon1", "weapon2", "weapon3", "weapon4" }
             },
         }
     },
