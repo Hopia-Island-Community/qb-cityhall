@@ -282,17 +282,17 @@ end)
 
 -- Threads
 
---CreateThread(function()
---    while true do
---        if isLoggedIn then
---            playerPed = PlayerPedId()
---            playerCoords = GetEntityCoords(playerPed)
---            closestCityhall = getClosestHall()
---            closestDrivingSchool = getClosestSchool()
---        end
---        Wait(1000)
---    end
---end)
+CreateThread(function()
+    while true do
+        if isLoggedIn then
+            playerPed = PlayerPedId()
+            playerCoords = GetEntityCoords(playerPed)
+            closestCityhall = getClosestHall()
+            --closestDrivingSchool = getClosestSchool()
+        end
+        Wait(1000)
+    end
+end)
 
 CreateThread(function()
     initBlips()
