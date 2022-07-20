@@ -7,11 +7,11 @@ local Translations = {
     },
     info = {
         bilp_text = 'Services Publiques',
-        city_services_menu = '~g~E~w~ - Menu Services Pubiques',
+        city_services_menu = '~g~E~w~ - Menu Services Publiques',
         id_card = 'Carte d\'identité',
         driver_license = 'Permis de conduire',
         weaponlicense = 'Permis d\'armes',
-        new_job = 'Bravo pour votre nouveau travail! (%{job})'
+        new_job = 'Nouveau travail : %{job}'
     },
     email = {
         mr = 'Mr',
