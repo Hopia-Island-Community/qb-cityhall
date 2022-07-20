@@ -266,9 +266,8 @@ RegisterNUICallback('requestLicenses', function(_, cb)
     for license, data in pairs(availableLicenses) do
         local hasRequired = false
 
-
         if data.metadata then
-            for _, allowed in ipairs(license.metadata) do
+            for _, allowed in ipairs(data.metadata) do
                 if licensesMeta[allowed] then
                     hasRequired = true
                     break
