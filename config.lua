@@ -44,7 +44,7 @@ Config.Peds = {
     -- Mairie Hopia Island Ped
     {
         model = 'a_f_y_business_01',
-        coords = vec4(-555.65, -185.66, 37.22, 219.45),
+        coords = vec4(-552.76, -202.89, 37.23, 357.52),
         scenario = 'WORLD_HUMAN_STAND_MOBILE',
         cityhall = true,
         zoneOptions = { -- Used for when UseTarget is false
